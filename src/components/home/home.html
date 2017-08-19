@@ -1,17 +1,32 @@
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--4-col">
-    <div class="demo-card-square mdl-card mdl-shadow--2dp">
-      <div class="mdl-card__title mdl-card--expand">
-        <h2 class="mdl-card__title-text">About</h2>
-      </div>
-      <div class="mdl-card__supporting-text">
-        Blablablabla...
-      </div>
-      <div class="mdl-card__actions mdl-card--border">
-        <router-link to="/about" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Next</router-link>
-      </div>
-    </div>
+<div class = "mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+  <div class = "mdl-tabs__tab-bar">
+	<a href = "#coffee-panel" class = "mdl-tabs__tab is-active">Coffee</a>
+	<a href = "#food-panel" class = "mdl-tabs__tab">Food</a>
+	<a href = "#etc-panel" class = "mdl-tabs__tab">Etc</a>
   </div>
-  <div class="mdl-cell mdl-cell--4-col">-</div>
-  <div class="mdl-cell mdl-cell--4-col">-</div>
+
+  <div class = "mdl-tabs__panel is-active" id = "coffee-panel">
+	<div class="mdl-grid" id="coffee-panel">
+	 <div class="acme-card mdl-card mdl-shadow--2dp">
+		<div class="mdl-card__title mdl-card--expand"></div>
+		<div class="acme-card-file mdl-card__actions">
+			<span class="demo-card-image__filename">Americano</span>
+		</div>
+	  </div>
+	  <div class="acme-card mdl-card mdl-shadow--2dp">
+		<div class="mdl-card__title mdl-card--expand"></div>
+		<div class="acme-card-file mdl-card__actions">
+			<span class="demo-card-image__filename">Americano</span>
+		</div>
+	  </div>
+   </div>
+  </div>
+
+  <div class = "mdl-tabs__panel" id = "food-panel">
+	<p>Tab 2 Content</p>
+  </div>
+
+  <div class = "mdl-tabs__panel" id = "etc-panel">
+	<p>Tab 3 Content</p>
+  </div>
 </div>

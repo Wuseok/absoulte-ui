@@ -8,6 +8,8 @@ import Router from 'vue-router';
 import { ILink } from '@/components/navbar/types.ts';
 import { logger } from '@/utils/logger';
 
+import '@/styles/style.css';
+
 @Component({
   template: <string>require('./navbar.html'),
   watch: {
@@ -19,8 +21,7 @@ import { logger } from '@/utils/logger';
 export class Navbar extends Vue {
   public links: ILink[] = [
     { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'List', path: '/list' }
+    { name: 'About', path: '/about' }
   ];
 
   public mounted(): void {

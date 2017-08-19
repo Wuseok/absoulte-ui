@@ -10,3 +10,19 @@
   color: #fff;
   background-color: #46B6AC;
 }
+
+.mdl-layout__header {
+  background: #da0847;
+  color: #fff;
+}
+.acme-card {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background: url('../assets/img/americano.jpg') center / cover;
+}
+.acme-card-file {
+    padding: 1em;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
