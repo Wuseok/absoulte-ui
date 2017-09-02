@@ -13,6 +13,8 @@ export const router: Router = new Router({
     { path: '/', component: component.Home },
     { path: '/about', component: component.About },
     { path: '/list', component: component.List },
-    { path: '/order', component: component.Order }
+    { path: '/order', component: component.Order },
+    { path: '/orderSuccess', component: component.OrderSuccess },
+    { path: '/orderFailed', component: component.OrderFailed }
   ]
 });
