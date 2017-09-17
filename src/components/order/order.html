@@ -1,65 +1,44 @@
-<div class="mdl-grid">
-  <div class="mdl-grid" id="coffee-panel">
-	 <div class="acme-card mdl-card mdl-shadow--2dp">
-		<div class="mdl-card__title mdl-card--expand"></div>
-	  </div>
-	  <div align="center">
-	    <h4>아메리카노</h4>
-	    <h4>Americano</h4>
-	    <div>
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fullwidth">
-              <input class="mdl-textfield__input" type="text" id="temperature" value="Hot" readonly tabIndex="-1">
-              <label for="temperature" class="mdl-textfield__label">Hot / Ice</label>
-              <ul for="temperature" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-                  <li class="mdl-menu__item">Hot</li>
-                  <li class="mdl-menu__item">Ice</li>
-              </ul>
-          </div>
-        </div>
-        <div>
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fullwidth">
-              <input class="mdl-textfield__input" type="text" id="size" value="Tall" readonly tabIndex="-1">
-              <label for="size" class="mdl-textfield__label">Size</label>
-              <ul for="size" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-                  <li class="mdl-menu__item">Short</li>
-                  <li class="mdl-menu__item">Tall</li>
-                  <li class="mdl-menu__item">Benti</li>
-              </ul>
-          </div>
-        </div>
-        <div>
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fullwidth">
-              <input class="mdl-textfield__input" type="text" id="ice" value="Normal" readonly tabIndex="-1">
-              <label for="ice" class="mdl-textfield__label">Ice</label>
-              <ul for="ice" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-                  <li class="mdl-menu__item">Less</li>
-                  <li class="mdl-menu__item">Normal</li>
-                  <li class="mdl-menu__item">Large</li>
-              </ul>
-          </div>
-        </div>
-	  </div>
-	  <div>
-	  	<a href="#orderFailed">
-		  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" style="margin-right: 30px;">
-		    Additional Menu
-		  </button>
-        </a>
-      </div>
-      <div>
-      	<a href="#orderSuccess">
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-          	Order
-          </button>
-        </a>
-      </div>
-<!-- 	  <div class="acme-card mdl-card mdl-shadow--2dp">
-		<div class="mdl-card__title mdl-card--expand"></div>
-		<div class="acme-card-file mdl-card__actions">
-			<span class="demo-card-image__filename">Americano</span>
-		</div>
-		<router-link to="/about">Homepage</router-link>
-	  </div> -->
-   </div>
-  </div>
+<div>
+	<md-layout md-gutter md-align="center">
+		<md-card style="width: 50%;">
+		  <md-card-media>
+			<img src="../../assets/img/americano.jpg" alt="Americano">
+		  </md-card-media>
+
+		  <md-card-header>
+			<div class="md-title">Americano</div>
+		  </md-card-header>
+		</md-card>
+
+		<md-input-container style="margin-left: 20px; margin-right: 20px;">
+		  <label for="temperature">Hot / Ice</label>
+		  <md-select name="temperature" id="temperature" v-model="temperature">
+			<md-option value="hot">Hot</md-option>
+			<md-option value="ice">Ice</md-option>
+		  </md-select>
+		</md-input-container>
+
+		<md-input-container style="margin-left: 20px; margin-right: 20px;">
+		  <label for="size">Size</label>
+		  <md-select name="size" id="size" v-model="size">
+			<md-option value="short">Short</md-option>
+			<md-option value="tall">Tall</md-option>
+			<md-option value="benti">Benti</md-option>
+		  </md-select>
+		</md-input-container>
+
+		<md-input-container style="margin-left: 20px; margin-right: 20px;">
+		  <label for="ice">Ice</label>
+		  <md-select name="ice" id="ice" v-model="ice">
+			<md-option value="less">Less</md-option>
+			<md-option value="normal">Normal</md-option>
+			<md-option value="large">Large</md-option>
+		  </md-select>
+		</md-input-container>
+	</md-layout>
+
+	<md-layout md-align="center">
+		<md-button href="#orderFailed" class="md-raised md-primary">Additional Menu</md-button>
+		<md-button href="#orderSuccess" class="md-raised md-accent">Order</md-button>
+	</md-layout>
 </div>

@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vue.js Webpack for TypeScript</title>
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <base href="/">
   </head>
 
   <body>
-    <div id="app-main" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div id="app-main">
       <navbar></navbar>
-      <main class="mdl-layout__content">
+      <main>
         <router-view>
-			<div class="mdl-spinner mdl-js-spinner is-active"></div>
 		</router-view>
       </main>
     </div>

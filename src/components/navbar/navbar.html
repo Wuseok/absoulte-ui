@@ -1,16 +1,10 @@
 <header class="mdl-layout__header">
-  <div class="mdl-layout__header-row">
-    <!-- Title -->
-    <span class="mdl-layout-title">Absolute</span>
-    <!-- Add spacer, to align navigation to the right -->
-    <div class="mdl-layout-spacer"></div>
-    <!-- Navigation -->
-    <nav class="mdl-navigation">
-      <router-link
+  <md-toolbar>
+    <h2 class="md-title" style="flex: 1">Absoulute</h2>
+    <router-link
         v-for="(link, index) in links" :key="index"
         v-bind:to="link.path"
-        class="mdl-navigation__link"
+        class="md-button"
         active-class="active" exact>{{link.name}}</router-link>
-    </nav>
-  </div>
+  </md-toolbar>
 </header>

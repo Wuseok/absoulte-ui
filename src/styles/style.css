@@ -1,33 +1,4 @@
-.mdl-navigation__link.active {
-  text-decoration: overline;
-}
-
-.demo-card-square.mdl-card {
-  width: 320px;
-  height: 320px;
-}
-.demo-card-square > .mdl-card__title {
-  color: #fff;
-  background-color: #46B6AC;
-}
-
-.mdl-layout__header {
+.md-theme {
   background: #da0847;
   color: #fff;
-}
-.acme-card {
-    width: 300px;
-    height: 300px;
-    margin: auto;
-    background: url('../assets/img/americano.jpg') center / cover;
-}
-.acme-card-file {
-    padding: 1em;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.mdl-layout {
-  align-items: center;
-  justify-content: center;
 }

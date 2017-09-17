@@ -10,6 +10,11 @@ import { logger } from '@/utils/logger';
   template: <string>require('./order.html')
 })
 export class Order extends Vue {
+
+  public temperature: String = 'hot';
+  public size: String = 'tall';
+  public ice: String = 'normal';
+
   public mounted(): void {
     this.$nextTick(() => logger.info('Order mounted'));
   }
